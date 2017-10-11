@@ -2,8 +2,6 @@ package ch.butoxxdev.planoxx;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,7 +16,7 @@ import java.text.DecimalFormat;
  * Created by bende on 09.10.2017.
  */
 
-public class act_partial_pressure_v2 extends Activity
+public class act_partial_pressure extends Activity
 {
     private ImageButton ibtBack;
     private EditText txbProf;
@@ -38,7 +36,7 @@ public class act_partial_pressure_v2 extends Activity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lay_partial_pressure_v2);
+        setContentView(R.layout.lay_partial_pressure);
 
         //Init View
         ibtBack = (ImageButton) findViewById(R.id.ibtBack);
@@ -72,7 +70,7 @@ public class act_partial_pressure_v2 extends Activity
         public void onClick(View view)
         {
             // Click code
-            act_partial_pressure_v2.this.finish();
+            act_partial_pressure.this.finish();
         }
     };
 
