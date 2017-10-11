@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PLanOxx</string>
+    <string name="titlePartialPressure">Pression partielle</string>
+    <string name="O2">O2</string>
+    <string name="N2">N2</string>
+    <string name="PourcentO2">%O2</string>
+    <string name="PourcentN2">%N2</string>
+    <string name="Profondeur">Prof.</string>
+    <string name="PPO2">PPO2</string>
+    <string name="PPN2">PPN2</string>
+    <string name="DefaultTxbNumber">0</string>
+    <string name="Calculer">Calculer</string>
+    <string name="ResetCalcul">Réinitialiser calcul</string>
+    <string name="ResetAll">Tout réinitialiser</string>
+    <string name="Explications">Explications: </string>
+</resources>

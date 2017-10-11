@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppTheme.LayTitle">
+        <item name="android:textColor">@color/clrWhite</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="AppTheme.LabelTextBox">
+        <item name="android:textColor">@color/clrBlack</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

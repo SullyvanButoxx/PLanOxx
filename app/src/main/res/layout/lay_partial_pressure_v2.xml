@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgHeader"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:src="@color/colorPrimaryDark" />
+
+        <ImageButton
+            android:id="@+id/ibtBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/img_left_arrow32x32" />
+
+        <TextView
+            android:id="@+id/txvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/titlePartialPressure"
+            android:textAppearance="@style/AppTheme.LayTitle"
+            android:textColor="@color/clrWhite" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/btrO2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/O2"
+            android:layout_marginStart="112dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton
+            android:id="@+id/btrN2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/N2"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/btrO2"
+            android:layout_marginStart="66dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txvPrct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txbPrct"
+            android:layout_alignBottom="@+id/txbPrct"
+            android:layout_alignParentStart="true"
+            android:text="@string/PourcentO2"
+            android:textAppearance="@style/AppTheme.LabelTextBox" />
+
+        <EditText
+            android:id="@+id/txbPrct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="@string/DefaultTxbNumber"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txvProf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txbProf"
+            android:layout_alignBottom="@+id/txbProf"
+            android:layout_alignParentStart="true"
+            android:text="@string/Profondeur"
+            android:textAppearance="@style/AppTheme.LabelTextBox" />
+
+        <EditText
+            android:id="@+id/txbProf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="@string/DefaultTxbNumber" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txvPp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txbPp"
+            android:layout_alignBottom="@+id/txbPp"
+            android:layout_alignParentStart="true"
+            android:text="@string/PPO2"
+            android:textAppearance="@style/AppTheme.LabelTextBox" />
+
+        <EditText
+            android:id="@+id/txbPp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="@string/DefaultTxbNumber" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnResetAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/ResetAll" />
+
+        <Button
+            android:id="@+id/btnResetCalcul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/ResetCalcul" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnCalcul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Calculer" />
+
+    <TextView
+        android:id="@+id/txvDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/Explications"
+        android:textAppearance="@style/AppTheme.LabelTextBox" />
+
+</LinearLayout>

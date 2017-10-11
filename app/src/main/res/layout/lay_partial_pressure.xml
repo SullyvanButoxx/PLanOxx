@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ch.butoxxdev.planoxx.act_partial_pressure">
+
+    <ImageView
+        android:id="@+id/imgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@color/colorPrimary"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/txvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Pressions partielles"
+        android:textAppearance="@style/AppTheme.LayTitle"
+        android:textColor="@color/clrWhite" />
+
+    <ImageButton
+        android:id="@+id/ibtBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/img_left_arrow32x32" />
+
+    <RadioButton
+        android:id="@+id/rbtO2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="O2"
+        android:layout_below="@+id/imgHeader"
+        android:layout_alignStart="@+id/txvTitle" />
+
+    <RadioButton
+        android:id="@+id/rbtN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N2"
+        android:layout_alignBaseline="@+id/rbtO2"
+        android:layout_alignBottom="@+id/rbtO2"
+        android:layout_alignEnd="@+id/txvTitle" />
+
+    <TextView
+        android:id="@+id/txvPrct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ibtBack"
+        android:layout_below="@+id/rbtO2"
+        android:layout_marginTop="35dp"
+        android:text="% O2"
+        android:textAppearance="@style/AppTheme.LabelTextBox" />
+
+    <TextView
+        android:id="@+id/txvProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txvPrct"
+        android:layout_below="@+id/txbPrct"
+        android:layout_marginTop="44dp"
+        android:text="Prof"
+        android:textAppearance="@style/AppTheme.LabelTextBox" />
+
+    <TextView
+        android:id="@+id/txvPp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txvPrct"
+        android:layout_below="@+id/txbProf"
+        android:layout_marginTop="55dp"
+        android:text="PPO2"
+        android:textAppearance="@style/AppTheme.LabelTextBox" />
+
+    <EditText
+        android:id="@+id/txbPrct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txvPrct"
+        android:layout_alignBottom="@+id/txvPrct"
+        android:layout_alignStart="@+id/rbtO2"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/txbProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txvProf"
+        android:layout_alignBottom="@+id/txvProf"
+        android:layout_alignStart="@+id/txbPrct"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/txbPp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txvPp"
+        android:layout_alignBottom="@+id/txvPp"
+        android:layout_alignStart="@+id/txbProf"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/btnCalcul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="Calculer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp" />
+
+    <TextView
+        android:id="@+id/txvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnCalcul"
+        android:text="Resultat: "
+        android:textAppearance="@style/AppTheme.LabelTextBox" />
+
+</android.widget.RelativeLayout>
